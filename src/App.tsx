@@ -8,7 +8,7 @@ function App() {
     <>
       <div className='grid-cols-3 '>
         <Header/>
-        <main className='bg-gray-200'>
+        <main className=''>
           <Hero/>
           <Services/>
         </main>
