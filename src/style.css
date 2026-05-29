@@ -1,0 +1,125 @@
+html {
+    user-select: none;
+    overflow: hidden;
+}
+
+main {
+    padding: 0 2px;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: space-between;
+    flex-direction: column;
+}
+
+.primary {
+    padding-top: 32px;
+    max-height: 500px;
+    width: 75%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+html::after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    content: "";
+    object-fit: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+    background-image: url(./bg.jpeg);
+}
+
+
+#container {
+    display: flex;
+    flex-grow: 5;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+}
+
+img {
+    position: absolute;
+    z-index: -1;
+    object-fit: contain;
+    width: 100vw;
+    height: 100vh;
+}
+
+li,
+ul {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin: 0;
+    appearance: none;
+    list-style: none;
+    font-style: normal;
+    padding-inline-start: 0;
+}
+
+.link {
+    background: rgba(200, 200, 200, 0.35);
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+    width: 300px;
+    border-radius: 16px;
+    height: 100px;
+    appearance: none;
+    list-style: none;
+    font-style: normal;
+    transition: all;
+    transition-duration: 0.25s;
+    transform: scale(1);
+
+}
+
+.link:hover {
+    transition: all;
+    transition-duration: 0.25s;
+    transform: scale(1.15);
+}
+
+#social-container {
+    flex-shrink: 1;
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+
+.social {
+    display: flex;
+    padding: 4px;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: rgba(200, 200, 200, 0.35);
+    transition: all;
+    transition-duration: 0.25s;
+    transform: scale(1);
+}
+
+div img {
+    width: 64px;
+    height: 64px;
+}
+
+.social:hover {
+    transition: all;
+    transition-duration: 0.25s;
+    transform: scale(1.15);
+}
